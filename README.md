@@ -3,22 +3,23 @@
 ## microservice
 
 | Setting  |  Value  |
-|---|---|---|---|---|
-| Build Command | go build main.go  |
-| Run Command  |  ./main |
+|---|---|
 | Port  |  8000 |
+| Build Command | go build main.go  |
+| Start Command  |  ./main |
+| Language  |  Go 1.11.4 |
 | SubFolder | microservice |
 | Endpoints | GET /hello |
 | | GET /headers|
 
-
 ## dynamic-website
 
 | Setting  |  Value  |
-|---|---|---|---|---|
-| Build Command | go build main.go  |
-| Run Command  |  ./main |
+|---|---|
 | Port  |  8000 |
+| Build Command | go build main.go  |
+| Start Command  |  ./main |
+| Language  |  Go 1.11.4 |
 | SubFolder | dynamic-website |
 | Endpoints | GET /hello |
 | | GET /headers|
@@ -37,7 +38,25 @@
 ## static-website-build
 
 | Setting  |  Value  |
-|---|---|---|---|---|
+|---|---|
+| Build Required | true  |
+| Build Command | n/a  |
+| SubFolder | static-website-build |
+| BuildFolder | build |
+| Endpoints |  |
+
+## helm
+
+| Setting  |  Value  |
+|---|---|
+| SubFolder | helm |
+| Endpoints |  |
+
+
+## dockerfile
+
+| Setting  |  Value  |
+|---|---|
 | Build Required | true  |
 | Build Command | n/a  |
 | SubFolder | static-website-build |
