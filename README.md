@@ -27,23 +27,22 @@
 ## static-website
 
 | Setting  |  Value  |
-|---|---|---|---|---|
+|---|---|
 | Build Required | false  |
 | Build Command | n/a  |
 | SubFolder | static-website |
 | Endpoints | GET /index.html |
-
-
 
 ## static-website-build
 
 | Setting  |  Value  |
 |---|---|
 | Build Required | true  |
-| Build Command | n/a  |
+| Language  |  Node |
+| Build Command | npm install && npm run build  |
+| Build Folder | build |
 | SubFolder | static-website-build |
-| BuildFolder | build |
-| Endpoints |  |
+| Endpoints | GET /index.html |
 
 ## helm
 
