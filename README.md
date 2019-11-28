@@ -44,6 +44,12 @@
 | SubFolder | static-website-build |
 | Endpoints | GET /index.html |
 
+### Build Args
+
+| Key  |  Value  |
+|---|---|
+| USERNAME | `default:'nobody'` |
+
 ## helm
 
 | Setting  |  Value  |
