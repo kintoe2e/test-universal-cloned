@@ -12,6 +12,16 @@
 | Endpoints | GET /hello |
 | | GET /headers|
 
+## microservice-dockerfile
+
+| Setting  |  Value  |
+|---|---|
+| Port  |  8000 |
+| Language  |  Custom Dockerfile |
+| SubFolder | microservice-dockerfile |
+| Endpoints | GET /hello |
+| | GET /headers|
+
 ## dynamic-website
 
 | Setting  |  Value  |
@@ -42,6 +52,22 @@
 | Build Command | npm install && npm run build  |
 | Build Folder | build |
 | SubFolder | static-website-build |
+| Endpoints | GET /index.html |
+
+### Build Args
+
+| Key  |  Value  |
+|---|---|
+| USERNAME | `default:'nobody'` |
+
+## static-website-build-dockerfile
+
+| Setting  |  Value  |
+|---|---|
+| Build Required | true  |
+| Language  |  Custom Dockerfile |
+| Build Folder | /app/build |
+| SubFolder | static-website-build-dockerfile |
 | Endpoints | GET /index.html |
 
 ### Build Args
